@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Osu! beatmap sets scanner",
+	"short_name": "Osu! scanner",
+	"description": "An extension that allows you to display on the user page all the Osu beatmap sets that have ever been played.",
+	"version": "1.0",
+	"author": "Andreyman76",
+	"permissions": ["activeTab", "tabs", "scripting"],
+	"host_permissions": [
+        "https://osu.ppy.sh/users/*"
+    ],
+	"background": {
+		"service_worker": "./js/background.js"
+	},
+	"icons": {
+		"16": "./icons/icon.png",
+		"32": "./icons/icon.png",
+		"48": "./icons/icon.png",
+		"128": "./icons/icon.png"
+	}
+}
