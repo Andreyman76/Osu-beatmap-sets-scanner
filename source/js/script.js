@@ -499,7 +499,7 @@ function generateCard(card) {
 		</div>
 		<div class="beatmap-playcount__detail">
 			<div class="beatmap-playcount__info">
-				<div class="beatmap-playcount__info-row u-ellipsis-overflow">
+				<div class="beatmap-playcount__info-row u-ellipsis-overflow" style="max-width: 60%; overflow: hidden;">
 					<a class="beatmap-playcount__title" href="${href}">${card.title}
 						<span class="beatmap-playcount__title-artist">${currentLocale.fromArtist}${card.artist}${currentLocale.fromArtistRight}
 						</span>
@@ -512,7 +512,7 @@ function generateCard(card) {
 					</span>
 				</div>
 			</div>
-			<div style="position: absolute;right: 10%;">
+			<div style="position: absolute;left: 60%;">
 				${downloadButtons}
 			</div>
 			<div class="beatmap-playcount__detail-count">
