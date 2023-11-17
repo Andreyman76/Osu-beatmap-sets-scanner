@@ -594,7 +594,7 @@ function inject() {
 	}
 
 	for(const header of headers) {
-		if(header.nextElementSibling.className == 'beatmap-playcount') {
+		if(header.getElementsByClassName("title__count").length == 1) {
 			clearInterval(timer);
 	
 			const title = document.createElement('h3');
